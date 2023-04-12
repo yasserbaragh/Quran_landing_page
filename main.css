@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+button {
+    cursor: pointer;
+}
+header {
+    background-color: white;
+}
+header .container {
+    padding: 0 40px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+header nav .logo {
+
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #00000052;
+    text-transform: uppercase;
+    padding: 7px 10px;
+}
+header nav ul li a:hover {
+    color: #20A36C;
+}
+
+header nav ul li a.active {
+    border: 1px groove #20A36C;
+    color: #20A36C;
+}
+
+header nav .button button {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #20A36C;
+    background-color: white;
+    border: none;
+    box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.5)
+}
+
+header nav .button button:hover {
+    color: white;
+    background-color: #23A76F;
+    border-color: #23A76F;
+}
+
+.home {
+    height: 100vh;
+    background-image: url("./;;;\ 1.png");
+    background-position: bottom;
+    background-repeat: none;
+    background-size: cover;
+    background-color: #F5F9FC;
+}
+.homeContainer {
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    
+}
+.home .homeContainer {
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 60px;
+    margin: 10px 0;
+    text-transform: capitalize;
+    color: #37374D;
+    text-shadow: 1px 1px 5px #bcbcbc;
+}
+p {
+    color: #4D4B4B;
+    letter-spacing: 3px;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 300;
+    margin: 20px 0;
+    
+}
+
+.home .homeContainer .buttons {
+    margin: 30px 0;
+}
+.home .homeContainer .buttons button {
+    padding: 10px 40px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+    margin: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #00000052;
+    background-color: transparent;
+    color: #37374D;
+}
+
+.home .homeContainer .buttons button:hover {
+    color: white;
+    background-color: #23A76F;
+    border-color: #23A76F;
+}
+
+.home .homeContainer .buttons .green {
+    margin-left: 0;
+    border: none;
+    color: white;
+    background: linear-gradient(to right, #20A36C 0%, #52E5A7 100%);
+}
+.home .homeContainer .buttons .green:hover {
+    color: #23A76F;
+    background: white;
+}
+.about {
+    padding: 60px 0;
+    margin-bottom: 120px;
+}
+.about .homeContainer {
+    padding: 0 100px;
+    gap: 30px;
+}
+
+.about .homeContainer .left {
+    width: 40%;
+    position: relative;
+}
+.about .homeContainer .left .inside {
+    position: absolute;
+    top: 0;
+}
+.about .homeContainer .right {
+    position: relative;
+}
+.about .homeContainer .right button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;
+    padding: 10px 40px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+    border-radius: 15px;
+    border: 3px solid #23A76F;
+    background-color: transparent;
+    color: #37374D;
+}
+
+.about .homeContainer .right button:hover {
+    color: white;
+    background-color: #23A76F;
+}
+
+.icon {
+    position: relative;
+    height: 5px;
+    border-top: 2px solid #37374D;
+    border-bottom: 2px solid #37374D;
+    cursor: grab;
+}
+
+.icon::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+    border-bottom: 2px solid #37374D;
+}
+
+.souar .container {
+    padding: 0 150px;
+}
+.container .header {
+    text-align: center;
+}
+.container .header h2 {
+    width: 100%;
+}
+
+.souar .container .header .search {
+    border: 3px solid #23A76F;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    color: #37374D;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.souar .container .header .search span {
+    border: 4px solid #37374D;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+.souar .container .header .search span::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 18px;
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+    border-bottom: 4px solid #37374D;
+    transform: rotate(45deg);
+}
+
+.souar .container .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 80px;
+    padding: 20px 0;
+}
+
+.souar .container .grid .sourah {
+    display: grid;
+    grid-template-areas: "num num head head head head head ic"
+                        "num num par par par par par . "
+                        "num num desc desc desc desc desc . ";
+    border: 1px solid #7E7E7E;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.souar .container .grid .sourah.active {
+    background: linear-gradient(to right, #20A36C 0%, #52E5A7 100%);
+    border: none;
+}
+.souar .container .grid .sourah:hover {
+    background: linear-gradient(to right, #20A36C 0%, #52E5A7 100%);
+    border: none;
+}
+
+.souar .container .grid .sourah .number {
+    grid-area: num;
+    background-color: #d9d9d9;
+    text-align: center;
+    margin: auto;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-left: 0;
+}
+
+.souar .container .grid .sourah h4 {
+    grid-area: head;
+    font-size: 30px;
+    font-weight: 600;
+    color: #37374D;
+    text-transform: capitalize;
+}
+.souar .container .grid .sourah p {
+    grid-area: par;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+}
+.souar .container .grid .sourah .small {
+    grid-area: desc;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+
+color: #4C4B4B;
+}
+.souar .container .grid .sourah .icon {
+    grid-area: ic;
+}
+
+.souar .container .showAll {
+    text-align: center;
+}
+.souar .container .showAll button {
+    padding: 20px 50px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+    margin: 35px 15px;
+    border-radius: 10px;
+    border: 3px solid #23A76F;
+    background-color: transparent;
+    color: #37374D;
+}
+.souar .container .showAll button:hover {
+    color: white;
+    background-color: #23A76F;
+}
+.lastSec {
+    margin: 20px 0;
+}
+.lastSec .container {
+    padding: 0 150px;
+}
+.lastSec .container .flex {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.lastSec .container .flex > * {
+    width: 30%;
+    padding: 10px;
+}
+
+.lastSec .container .flex .sec h3 {
+    color: #37374D;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 15px;
+    text-transform: capitalize;
+    
+}
+
+.lastSec .container .flex .sec span {
+    color: #21A56E;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.lastSec .container .bottom {
+    text-align: center;
+}
+.lastSec .container .bottom button {
+    padding: 7px 30px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+    margin: 35px 15px;
+    border-radius: 10px;
+    border: 3px solid #23A76F;
+    background-color: transparent;
+    color: #37374D;
+}
+.lastSec .container .bottom button:hover {
+    color: white;
+    background-color: #23A76F;
+}
+
+.footer {
+    background-color: #37374D;
+}
+
+.footer .container {
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container .left {
+    width: 100%;
+}
+
+.footer .container .left .par {
+    margin: 50px;
+}
+.footer .container .left .par p {
+    color: white;
+    letter-spacing: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+.footer .container .left .head {
+    text-align: center;
+}
+.footer .container .left h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.footer .container .left .contact {
+    display: flex;
+    gap: 20px;
+}
+.footer .container .left .contact ul {
+    list-style-type: none;
+}
+.footer .container .left .contact ul li {
+    display: inline-block;
+    padding: 50px;
+    cursor: pointer;
+}
+
+.footer .container .right {
+    padding: 50px 0;
+    width: 58%;
+}
+.footer .container .right form {
+    background-color: white;
+    border-radius: 40px;
+    padding: 10px;
+    text-align: center;
+}
+.footer .container .right form > * {
+    background-color: #37374D;
+    width: 90%;
+    margin: 10px 0;
+    border-radius: 40px;
+    color: white;
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+}
+
+.footer .container .right form > *::placeholder {
+    color: white;
+    font-weight: 600;
+}
+.footer .container .right form textarea {
+    height: 134px;
+}
+.footer .container .right form textarea::placeholder {
+    padding: 45px 0;
+}
+
+.footer .container .right form button {
+    background-color: #49D99D;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.footer .container .right form button:hover {
+    background-color: #37374D;
+}
